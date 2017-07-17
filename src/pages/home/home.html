@@ -8,16 +8,108 @@
 </ion-header>
 
 <ion-content>
-  <ion-slides pager="true" text-wrap>
+  <ion-slides text-wrap autoplay="3000" style="height:47%; background-color:#BBBFC4">
     <ion-slide>
         <img src="http://alphanews.live/sites/default/files/styles/media_image/public/2017-07/cna_t6046461596d049cd8e26cf7f6081a029.jpg?itok=B2R0xnDw" />
-        <p class="caption">Σε εξέλιξη δεύτερη συνεδρίαση του Εθνικού Συμβουλίου μετά το Κραν Μοντάνα (ΦΩΤΟ)</p>
+        <p>Σε εξέλιξη δεύτερη συνεδρίαση του Εθνικού Συμβουλίου μετά το Κραν Μοντάνα (ΦΩΤΟ)</p>
     </ion-slide>
     <ion-slide>
-      <p>Slide 2</p>
+        <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-06/spe.jpg?itok=6ZneLulq" />
+        <p>Η Altamira αναλαμβάνει δράση για τα κόκκινα δάνεια του Συνεργατισμού</p>
     </ion-slide>
     <ion-slide>
-      <p>Slide 3</p>
+        <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/2_-_1000.jpg?itok=a1ngNj38" />
+        <p>Ακυβέρνητο ιστιοπλοϊκό σκάφος, πλέει 75 ναυτικά μίλια νότια της Λεμεσού (BINTEO)</p>
     </ion-slide>
   </ion-slides>
+
+  <ion-item class="lightGrey">
+      <h2>editor's choice</h2>
+      <ion-grid>
+      <ion-row text-wrap>
+        <ion-col col-6 class="darkerGrey">
+          <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/westcapella750.jpg?itok=OFTwHkeD" />
+        </ion-col>
+        <ion-col col-6 class="darkGrey">
+        <h2>
+            Κατεβαίνει το τρυπάνι του West Capella
+        </h2>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-item>
+<ion-item>
+  <img src="http://ca.cubecdn.net/20170717082825_wmid_135300.jpg" />
+</ion-item>
+<ion-item class="lightGrey">
+  <h2>Κύπρος</h2>
+  <ion-grid>
+  <ion-row>
+    <ion-col text-wrap col-6>
+      <ion-list no-lines>
+      <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-03/ASTYNOMIA.jpg?itok=JEnK3neM" />
+      <p>
+        Σοβαρό κίνδυνο διέτρεξε αστυνομικός στον αυτοκινητόδρομο Λευκωσίας-Λεμεσού
+      </p>
+        <ion-item class="transparent">
+          <ion-icon name="ios-clock-outline" item-start> 25m</ion-icon>
+          <ion-icon name="share" item-end></ion-icon>
+          <ion-icon name="ios-bookmark-outline" item-end></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+    <ion-col fixed col-6 text-wrap class="posRel">
+      <ion-list no-lines>
+      <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-04/thalassa_trikymia_chloraka.jpg?itok=Cw3K-GhS" />
+      <p>
+        Αγνοείται 38χρονος λουόμενος στην Πέγεια
+      </p>
+        <ion-item class="transparent">
+          <ion-icon name="ios-clock-outline" item-start> 25m</ion-icon>
+          <ion-icon name="share" item-end></ion-icon>
+          <ion-icon name="ios-bookmark-outline" item-end></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-item>
+<ion-item class="lightGrey">
+  <h2>Αθλητικά</h2>
+  <ion-row>
+    <ion-col col-6 text-wrap>
+      <ion-list>
+      <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-03/IONAS%20NIKOLAOY.jpg?itok=dHcpHtgW" />
+      <p>
+        Ιωνάς Νικολάου: «Ντροπή όσα έγιναν στο Δασάκι»
+      </p>
+      <ion-row class="bottomDiv">
+        <ion-icon name="ios-clock-outline" item-left><small> 25m</small></ion-icon>
+        <ion-icon name="share" item-right></ion-icon>
+        <ion-icon name="ios-bookmark-outline" item-right></ion-icon>
+      </ion-row>
+      </ion-list>
+    </ion-col>
+    <ion-col col-6 text-wrap>
+      <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/phelchoyizen.jpeg?itok=7SAyphTX" />
+      <p>
+        Υπέγραψε, φωτογραφήθηκε και έκανε και τις πρώτες του δηλώσεις
+      </p>
+    <ion-row class="bottomDiv">
+      <ion-icon name="ios-clock-outline" item-left><small> 25m</small></ion-icon>
+      <ion-icon name="share" item-right></ion-icon>
+      <ion-icon name="ios-bookmark-outline" item-right></ion-icon>
+    </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-item>
+<ion-item>
+  <img src="https://xblasterads.com/hb/www/images/85443e4c0aab23b69b761ffcf4878e35.gif" />
+</ion-item>
+<ion-tabs>
+  <ion-tab tabIcon="water" tabTitle="Water" [root]="tab1"></ion-tab>
+  <ion-tab tabIcon="leaf" tabTitle="Life" [root]="tab2"></ion-tab>
+  <ion-tab tabIcon="flame" tabTitle="Fire" [root]="tab3"></ion-tab>
+  <ion-tab tabIcon="magnet" tabTitle="Force" [root]="tab4"></ion-tab>
+</ion-tabs>`
 </ion-content>

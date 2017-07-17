@@ -12,6 +12,9 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   showMe: boolean = false;
+  showMe2: boolean = false;
+  showYgeia: boolean = false;
+  showPsich: boolean = false;
 
   rootPage: any = HomePage;
 
@@ -42,5 +45,17 @@ export class MyApp {
 
   openKypriako() {
     this.nav.push(ListPage);
+  }
+
+  showSubItems2() {
+    this.showMe2 = !this.showMe2;
+  }
+
+  showYgeiaItems() {
+    this.showYgeia = !this.showYgeia;
+  }
+
+  showPsichItems() {
+    this.showPsich = !this.showPsich;
   }
 }

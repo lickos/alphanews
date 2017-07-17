@@ -8,5 +8,44 @@ ion-slide img {
 }
 
 ion-slide p {
+  font-size: 1.4rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.marginHeader {
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+.lightGrey {
+  background-color: #f4f4f4;
+}
+
+.darkerGrey {
+  background-color: #bbbfc4;
+}
+
+.darkGrey {
+  background-color: #9b9b9b;
+  color: #fff;
+}
+
+.transparent {
+  background-color: transparent;
+  font-size: 0.5em;
+  bottom: 0;
+  padding: 0px;
+}
+
+.posRel {
+}
+
+.item > ion-icon {
   font-size: 1.5rem;
+}
+
+.item-inner > ion-icon {
+  font-size: 2rem;
 }

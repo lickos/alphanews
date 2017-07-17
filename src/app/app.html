@@ -16,17 +16,72 @@
         Πολιτική
         <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
-      <button class="darker" no-lines menuClose *ngIf="showMe" ion-item (click)="openKypriako()">
-        Κυπριακό
-      </button>
-      <button class="darker" *ngIf="showMe" ion-item (click)="showItems()">
-        Ενέργεια
-      </button>
+        <button class="darker" no-lines menuClose *ngIf="showMe" ion-item (click)="openKypriako()">
+          Κυπριακό
+        </button>
+        <button class="darker" *ngIf="showMe" ion-item (click)="showItems()">
+          Ενέργεια
+        </button>
       <button class="greyClr" menuClose ion-item (click)="openGreece()">
         Ελλάδα
       </button>
       <button class="greyClr" menuClose ion-item (click)="openGreece()">
         Διεθνή
+      </button>
+      <button class="greyClr" ion-item (click)="showSubItems2()">
+        Αθλητικά
+        <ion-icon item-end name="ios-arrow-down"></ion-icon>
+      </button>
+        <button class="darker" no-lines menuClose *ngIf="showMe2" ion-item (click)="openKypriakoProtathlima()">
+          Κυπριακό Πρωτάθλημα
+        </button>
+        <button class="darker" no-lines menuClose *ngIf="showMe2" ion-item (click)="openEllinikoProtathlima()">
+          Ελληνικό Πρωτάθλημα
+        </button>
+        <button class="darker" no-lines menuClose *ngIf="showMe2" ion-item (click)="openDiethniProtathlimata()">
+          Διεθνή Πρωταθλήματα
+        </button>
+        <button class="darker" menuClose *ngIf="showMe2" ion-item (click)="openAthlitismos()">
+          Αθλητισμός
+        </button>
+      <button class="greyClr" menuClose ion-item (click)="openOikonomia()">
+        Οικονομία
+      </button>
+      <button class="greyClr" ion-item (click)="showYgeiaItems()">
+        Υγεία
+      <ion-icon item-end name="ios-arrow-down"></ion-icon>
+      </button>
+        <button class="darker" *ngIf="showYgeia" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
+          Fitness
+        </button>
+        <button class="darker" no-lines menuClose *ngIf="showYgeia" ion-item (click)="openDiethniProtathlimata()">
+          Ψυχολογία
+        </button>
+      <button class="greyClr" ion-item (click)="showPsichItems()">
+        Ψυχαγωγία
+      <ion-icon item-end name="ios-arrow-down"></ion-icon>
+      </button>
+        <button class="darker" *ngIf="showPsich" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
+          Προτάσεις
+        </button>
+        <button class="darker" *ngIf="showPsich" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
+          Showbiz
+        </button>
+        <button class="darker" *ngIf="showPsich" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
+          Συνεντέυξεις
+        </button>
+        <button class="darker" *ngIf="showPsich" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
+          Κουζίνα
+        </button>
+      <button class="greyClr" menuClose ion-item (click)="openOikonomia()">
+        Blog
+      </button>
+      <button class="greyClr" menuClose ion-item (click)="openOikonomia()">
+        Λούης Night Show
+      </button>
+      <button class="evenDarker" menuClose ion-item (click)="openOikonomia()">
+        Πείτε μας τη γνώμη σας
+        <ion-icon name="ios-chatbubbles-outline" item-end></ion-icon>
       </button>
     </ion-list>
   </ion-content>
