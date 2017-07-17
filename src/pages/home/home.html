@@ -1,18 +1,23 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+<ion-header padding-top>
+  <ion-item>
+      <ion-icon name="menu" menuToggle item-left></ion-icon>
+      <img src="assets/img/logo.svg" />
+      <ion-icon name="ios-search-outline" item-end></ion-icon>
+      <ion-icon name="md-heart" item-end (click)="openCats()"></ion-icon>
+  </ion-item>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content>
+  <ion-slides pager="true" text-wrap>
+    <ion-slide>
+        <img src="http://alphanews.live/sites/default/files/styles/media_image/public/2017-07/cna_t6046461596d049cd8e26cf7f6081a029.jpg?itok=B2R0xnDw" />
+        <p class="caption">Σε εξέλιξη δεύτερη συνεδρίαση του Εθνικού Συμβουλίου μετά το Κραν Μοντάνα (ΦΩΤΟ)</p>
+    </ion-slide>
+    <ion-slide>
+      <p>Slide 2</p>
+    </ion-slide>
+    <ion-slide>
+      <p>Slide 3</p>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
