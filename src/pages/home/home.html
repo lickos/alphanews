@@ -2,13 +2,16 @@
   <ion-item>
       <ion-icon name="menu" menuToggle item-left></ion-icon>
       <img src="assets/img/logo.svg" />
-      <ion-icon name="ios-search-outline" item-end></ion-icon>
-      <ion-icon name="md-heart" item-end (click)="openCats()"></ion-icon>
+      <ion-icon name="ios-search-outline" item-end (click)="openSearch()"></ion-icon>
+      <ion-icon name="md-heart" item-end (click)="openFavs()"></ion-icon>
   </ion-item>
 </ion-header>
 
 <ion-content>
-  <ion-slides text-wrap autoplay="3000" style="height:47%; background-color:#BBBFC4">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-slides text-wrap autoplay="3000" style="height:53%; background-color:#BBBFC4">
     <ion-slide>
         <img src="http://alphanews.live/sites/default/files/styles/media_image/public/2017-07/cna_t6046461596d049cd8e26cf7f6081a029.jpg?itok=B2R0xnDw" />
         <p>Σε εξέλιξη δεύτερη συνεδρίαση του Εθνικού Συμβουλίου μετά το Κραν Μοντάνα (ΦΩΤΟ)</p>
@@ -38,8 +41,8 @@
   </ion-row>
 </ion-grid>
 </ion-item>
-<ion-item>
-  <img src="http://ca.cubecdn.net/20170717082825_wmid_135300.jpg" />
+<ion-item class="transparent" padding-left>
+  <img style="width:100%" src="http://ca.cubecdn.net/20170717082825_wmid_135300.jpg" />
 </ion-item>
 <ion-item class="lightGrey">
   <h2>Κύπρος</h2>
@@ -113,3 +116,22 @@
   <ion-tab tabIcon="magnet" tabTitle="Force" [root]="tab4"></ion-tab>
 </ion-tabs>`
 </ion-content>
+<ion-footer class="backColor">
+  <ion-row no-padding>
+    <ion-col col-4 class="verticalLine">
+      <button ion-button full color="dark" icon-right class="noPad">Χρήσιμα
+        <ion-icon name="ios-pricetag-outline"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col col-4 class="verticalLine">
+      <button ion-button full color="dark" icon-right class="noPad">TVnews
+        <ion-icon name="md-desktop"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col col-4>
+      <button ion-button full color="dark" icon-right class="noPad">Report
+        <ion-icon name="ios-chatbubbles-outline"></ion-icon>
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

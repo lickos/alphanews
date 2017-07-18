@@ -49,3 +49,17 @@ ion-slide p {
 .item-inner > ion-icon {
   font-size: 2rem;
 }
+
+.noPad {
+  box-shadow: none;
+  color: #9b9b9b;
+  text-transform: none;
+}
+
+.backColor {
+  background-color: #222222;
+}
+
+.verticalLine {
+  border-right: 1px solid #a09185;
+}
