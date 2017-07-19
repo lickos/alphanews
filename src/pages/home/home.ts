@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FavoritesPage } from '../favorites/favorites';
 import { SearchPage } from '../search/search';
+import { ListItemComponent } from '../../components/list-item/list-item';
 
 @Component({
   selector: 'page-home',

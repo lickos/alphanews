@@ -11,9 +11,11 @@ import { SearchPage } from '../pages/search/search';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ListItemComponent } from '../components/list-item/list-item';
 
 @NgModule({
-  declarations: [MyApp, HomePage, ListPage, CyprusPage, FavoritesPage, SearchPage],
+  declarations: [MyApp, HomePage, ListPage, CyprusPage, FavoritesPage, SearchPage,
+    ListItemComponent],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, HomePage, ListPage, CyprusPage, FavoritesPage, SearchPage],

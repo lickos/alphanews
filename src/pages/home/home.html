@@ -7,7 +7,7 @@
   </ion-item>
 </ion-header>
 
-<ion-content>
+<ion-content no-padding>
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
@@ -44,35 +44,17 @@
 <ion-item class="transparent" padding-left>
   <img style="width:100%" src="http://ca.cubecdn.net/20170717082825_wmid_135300.jpg" />
 </ion-item>
-<ion-item class="lightGrey">
+<ion-item class="lightGrey" no-padding>
   <h2>Κύπρος</h2>
   <ion-grid>
   <ion-row>
     <ion-col text-wrap col-6>
-      <ion-list no-lines>
-      <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-03/ASTYNOMIA.jpg?itok=JEnK3neM" />
-      <p>
-        Σοβαρό κίνδυνο διέτρεξε αστυνομικός στον αυτοκινητόδρομο Λευκωσίας-Λεμεσού
-      </p>
-        <ion-item class="transparent">
-          <ion-icon name="ios-clock-outline" item-start> 25m</ion-icon>
-          <ion-icon name="share" item-end></ion-icon>
-          <ion-icon name="ios-bookmark-outline" item-end></ion-icon>
-        </ion-item>
-      </ion-list>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-03/ASTYNOMIA.jpg?itok=JEnK3neM'
+                         typehead='Κύπρος' typeText='Σοβαρό κίνδυνο διέτρεξε αστυνομικός στον αυτοκινητόδρομο Λευκωσίας-Λεμεσού'></list-item>
     </ion-col>
-    <ion-col fixed col-6 text-wrap class="posRel">
-      <ion-list no-lines>
-      <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-04/thalassa_trikymia_chloraka.jpg?itok=Cw3K-GhS" />
-      <p>
-        Αγνοείται 38χρονος λουόμενος στην Πέγεια
-      </p>
-        <ion-item class="transparent">
-          <ion-icon name="ios-clock-outline" item-start> 25m</ion-icon>
-          <ion-icon name="share" item-end></ion-icon>
-          <ion-icon name="ios-bookmark-outline" item-end></ion-icon>
-        </ion-item>
-      </ion-list>
+    <ion-col col-6 text-wrap>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-03/ASTYNOMIA.jpg?itok=JEnK3neM'
+                         typehead='Κύπρος' typeText='Σοβαρό κίνδυνο διέτρεξε αστυνομικός στον αυτοκινητόδρομο Λευκωσίας-Λεμεσού'></list-item>
     </ion-col>
   </ion-row>
   </ion-grid>
