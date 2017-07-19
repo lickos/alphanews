@@ -1,25 +1,23 @@
 <!-- Generated template for the ListItemComponent component -->
-<ion-card no-padding>
   <img src='{{imgSrc}}' />
-  <ion-card-content no-padding>
-    <p>{{typeText}}</p>
+  <ion-card-content class="padding1">
+    <p class="limitThreeLines">{{typeText}}</p>
   </ion-card-content>
-  <ion-row class="transparent">
-    <ion-col col-8>
-      <button ion-button icon-left clear small>
-        <ion-icon name="clock"></ion-icon>
-        <div> 25mins</div>
+  <ion-row class="transparent" no-padding>
+    <ion-col col-6>
+      <button ion-button icon-left clear small no-padding>
+        <ion-icon name="clock" class="noCaps"></ion-icon>
+        <div class="noCaps"> 25mins</div>
       </button>
     </ion-col>
     <ion-col col-2>
-      <button ion-button icon-left item-end clear small>
-        <ion-icon name="share"></ion-icon>
+      <button ion-button icon-left clear small padding-right>
+        <ion-icon name="share" class="noCaps"></ion-icon>
       </button>
     </ion-col>
     <ion-col col-2>
-      <button ion-button icon-left clear small>
-        <ion-icon name="ios-bookmark-outline"></ion-icon>
+      <button ion-button icon-left clear small padding-right>
+        <ion-icon name="ios-bookmark-outline" class="noCaps"></ion-icon>
       </button>
     </ion-col>
   </ion-row>
-</ion-card>

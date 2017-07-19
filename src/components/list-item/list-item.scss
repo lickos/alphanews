@@ -1,2 +1,22 @@
 list-item {
 }
+
+.padding1 {
+  padding: 3px;
+}
+
+.noCaps {
+  text-transform: none;
+  color: #000;
+}
+
+.limitThreeLines {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 1.4rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1.6rem;
+  max-height: 5.0rem;
+}
