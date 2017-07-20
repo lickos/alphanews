@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SearchPage } from '../../pages/search/search';
 import { FavoritesPage } from '../../pages/favorites/favorites';
+import { HomePage } from '../../pages/home/home';
 
 @Component({
   selector: 'alphaheader',
@@ -9,6 +10,10 @@ import { FavoritesPage } from '../../pages/favorites/favorites';
 })
 export class AlphaheaderComponent {
   constructor(public navCtrl: NavController) {}
+
+  openHome() {
+    this.navCtrl.push(HomePage);
+  }
 
   openSearch() {
     this.navCtrl.push(SearchPage);

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { UsefulPage } from '../useful/useful';
 
 @Component({
   selector: 'page-home',
@@ -15,5 +16,9 @@ export class HomePage {
       console.log('Async operation has ended');
       refresher.complete();
     }, 2000);
+  }
+
+  openUseful() {
+    this.navCtrl.push(UsefulPage);
   }
 }
