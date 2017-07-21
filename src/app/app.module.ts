@@ -18,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ListItemComponent } from '../components/list-item/list-item';
 import { AlphaheaderComponent } from '../components/alphaheader/alphaheader';
 import { WeatherComponent } from '../components/weather/weather';
+import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { WeatherComponent } from '../components/weather/weather';
     UsefulPage,
     AlphaheaderComponent,
     WeatherComponent,
-    PolitikiPage
+    PolitikiPage,
+    ReplacequotesPipe
   ],
   imports: [BrowserModule, HttpModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],

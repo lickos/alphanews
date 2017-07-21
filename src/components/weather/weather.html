@@ -1,5 +1,47 @@
 <!-- Generated template for the WeatherComponent component -->
 <div>
-  <h2>Weather in {{text}}</h2>
-  <img src="{{source}}"  />
+  <ion-title class="centerAlign">
+    Καιρός
+  </ion-title>
+  <h2 class="centerAlign">3 days forecast for <b>{{text?.location.name}} - {{text?.location.country}}</b></h2>
+  <h3 class="centerAlign">Last Update: {{text?.current.last_updated}}</h3>
+  <ion-row align-items-center>
+    <ion-col col-3>
+      <p>
+        Σήμερα
+      </p>
+    </ion-col>
+    <ion-col col-3>
+    <img class="centerAlign" src="{{text?.current.condition.icon}}"  />
+    </ion-col>
+    <ion-col col-6>
+      <p><b>{{text?.current.condition.text}} </b> Temp: <b>{{text?.current.temp_c}}</b></p>
+    </ion-col>
+  </ion-row>
+  <ion-row align-items-center>
+    <ion-col col-4>
+      <p>
+        Αύριο
+      </p>
+    </ion-col>
+    <ion-col col-4>
+    <img class="centerAlign" src="{{text?.forecast.forecastday[1].day.condition.icon}}"  />
+    </ion-col>
+    <ion-col col-4>
+      <b><p>{{text?.forecast.forecastday[1].day.condition.text}}</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row align-items-center>
+    <ion-col col-4>
+      <p>
+        Μεθαύριο
+      </p>
+    </ion-col>
+    <ion-col col-4>
+    <img class="centerAlign" src="{{text?.forecast.forecastday[2].day.condition.icon}}"  />
+    </ion-col>
+    <ion-col col-4>
+      <b><p>{{text?.forecast.forecastday[2].day.condition.text}}</p></b>
+    </ion-col>
+  </ion-row>
 </div>
