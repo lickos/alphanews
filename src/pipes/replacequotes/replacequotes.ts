@@ -1,13 +1,13 @@
-import { Pipe, PipeTransform } from "@angular/core";
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: "replacequotes"
+  name: 'replacequotes'
 })
 export class ReplacequotesPipe implements PipeTransform {
-  /**
-   * Takes a value and makes it lowercase.
-   */
   transform(value: string, ...args) {
-    return value.replace(/&quot;/g, '"');
+    console.log(value);
+    if (value) {
+      return value.replace(/&quot;/g, '"');
+    }
   }
 }
