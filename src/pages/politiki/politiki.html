@@ -6,7 +6,7 @@
 <ion-content>
 
   <ion-title padding-top class="centerAlign">
-    Κύπρος
+    Πολιτική
   </ion-title>
   <ion-item class="lightGrey">
       <ion-grid>
@@ -18,7 +18,7 @@
         </ion-col>
         <ion-col col-6 class="darkGrey centerVer">
         <h4 class="limitFourLines">
-            {{main?.title}}
+            {{main?.title.replace("quot","")}}
         </h4>
     </ion-col>
     <ion-item class="transparent">
@@ -37,7 +37,7 @@
         </ion-col>
       <ion-col col-7>
       <h5 class="limitFourLines">
-        {{first?.title}}
+        {{first?.title.replace("quot","")}}
       </h5>
       </ion-col>
       <ion-item class="transparent">
@@ -57,7 +57,7 @@
         </ion-col>
       <ion-col col-7>
       <h5 class="limitFourLines">
-        {{item?.title}}
+        {{item?.title.replace("quot","")}}
       </h5>
       </ion-col>
       <ion-item class="transparent">

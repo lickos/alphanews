@@ -24,3 +24,37 @@ page-cyprus {
 .label-md {
   margin: 2px 8px 2px 0;
 }
+
+.limitFourLines {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 1.4rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 1.6rem;
+  max-height: 7.0rem;
+}
+
+.centerVer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-ios.item-block .item-inner,
+.item-md.item-block .item-inner {
+  border-bottom: 0px;
+}
+
+.item-inner > ion-icon {
+  font-size: 1.6rem;
+}
+
+.button-md {
+  text-transform: none;
+}
+
+.darkerText {
+  color: #666c73;
+}

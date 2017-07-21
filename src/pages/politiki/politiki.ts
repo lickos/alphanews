@@ -5,13 +5,13 @@ import 'rxjs/add/operator/map';
 import { Content } from 'ionic-angular';
 
 @Component({
-  selector: 'page-cyprus',
-  templateUrl: 'cyprus.html'
+  selector: 'page-politiki',
+  templateUrl: 'politiki.html'
 })
-export class CyprusPage {
+export class PolitikiPage {
   @ViewChild(Content) content: Content;
   page: any;
-  url: string = 'https://alphanews.live/json/cat/1?page=';
+  url: string = 'https://alphanews.live/json/cat/2?page=';
   main: string;
   first: string;
   rest: string;

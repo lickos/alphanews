@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CyprusPage } from '../pages/cyprus/cyprus';
+import { PolitikiPage } from '../pages/politiki/politiki';
 
 @Component({
   templateUrl: 'app.html'
@@ -44,8 +45,8 @@ export class MyApp {
     this.showMe = !this.showMe;
   }
 
-  openKypriako() {
-    this.nav.push(ListPage);
+  openPolitiki() {
+    this.nav.push(PolitikiPage);
   }
 
   showSubItems2() {
