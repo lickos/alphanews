@@ -12,6 +12,7 @@ import { FavoritesPage } from '../pages/favorites/favorites';
 import { SearchPage } from '../pages/search/search';
 import { UsefulPage } from '../pages/useful/useful';
 import { PolitikiPage } from '../pages/politiki/politiki';
+import { ElladaPage } from '../pages/ellada/ellada';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,11 +34,22 @@ import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
     AlphaheaderComponent,
     WeatherComponent,
     PolitikiPage,
-    ReplacequotesPipe
+    ReplacequotesPipe,
+    ElladaPage
   ],
   imports: [BrowserModule, HttpModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp, HomePage, ListPage, CyprusPage, FavoritesPage, SearchPage, UsefulPage, PolitikiPage],
+  entryComponents: [
+    MyApp,
+    HomePage,
+    ListPage,
+    ElladaPage,
+    CyprusPage,
+    FavoritesPage,
+    SearchPage,
+    UsefulPage,
+    PolitikiPage
+  ],
   providers: [StatusBar, SplashScreen, Geolocation, { provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
 export class AppModule {}

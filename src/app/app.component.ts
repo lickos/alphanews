@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CyprusPage } from '../pages/cyprus/cyprus';
 import { PolitikiPage } from '../pages/politiki/politiki';
+import { ElladaPage } from '../pages/ellada/ellada';
 
 @Component({
   templateUrl: 'app.html'
@@ -41,12 +42,16 @@ export class MyApp {
     this.nav.push(CyprusPage);
   }
 
-  showSubItems() {
-    this.showMe = !this.showMe;
-  }
-
   openPolitiki() {
     this.nav.push(PolitikiPage);
+  }
+
+  openEllada() {
+    this.nav.push(ElladaPage);
+  }
+
+  showSubItems() {
+    this.showMe = !this.showMe;
   }
 
   showSubItems2() {
