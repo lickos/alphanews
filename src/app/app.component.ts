@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { CyprusPage } from '../pages/cyprus/cyprus';
 import { PolitikiPage } from '../pages/politiki/politiki';
 import { ElladaPage } from '../pages/ellada/ellada';
+import { DiethniPage } from '../pages/diethni/diethni';
 
 @Component({
   templateUrl: 'app.html'
@@ -48,6 +49,10 @@ export class MyApp {
 
   openEllada() {
     this.nav.push(ElladaPage);
+  }
+
+  openDiethni() {
+    this.nav.push(DiethniPage);
   }
 
   showSubItems() {

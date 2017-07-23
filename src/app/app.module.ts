@@ -13,6 +13,7 @@ import { SearchPage } from '../pages/search/search';
 import { UsefulPage } from '../pages/useful/useful';
 import { PolitikiPage } from '../pages/politiki/politiki';
 import { ElladaPage } from '../pages/ellada/ellada';
+import { DiethniPage } from '../pages/diethni/diethni';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +36,8 @@ import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
     WeatherComponent,
     PolitikiPage,
     ReplacequotesPipe,
-    ElladaPage
+    ElladaPage,
+    DiethniPage
   ],
   imports: [BrowserModule, HttpModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -48,7 +50,8 @@ import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
     FavoritesPage,
     SearchPage,
     UsefulPage,
-    PolitikiPage
+    PolitikiPage,
+    DiethniPage
   ],
   providers: [StatusBar, SplashScreen, Geolocation, { provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
