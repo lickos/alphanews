@@ -2,23 +2,120 @@ list-item {
 }
 
 .padding1 {
-  padding: 3px;
+  padding: 5px;
+  background-color: #f4f4f4;
 }
 
 .noCaps {
   text-transform: none;
-  color: #000;
+  // color: #000;
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+.limitFourLines {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 1.2rem !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1.4rem;
+  max-height: 5.8rem;
+}
+
+.lightGreyDiv {
+  color: #9e9e9e;
+}
+
+.platform-android .kiprosColor {
+  background-color: #ccbd5f;
+  position: absolute;
+  bottom: 26vh;
+  color: #fff;
+}
+
+.platform-ios .kiprosColor {
+  background-color: #ccbd5f;
+  position: absolute;
+  bottom: 24vh;
+  color: #fff;
+}
+
+.platform-android .politikiColor {
+  background-color: #4d5865;
+  position: absolute;
+  bottom: 26vh;
+  color: #fff;
+}
+
+.platform-ios .politikiColor {
+  background-color: #4d5865;
+  position: absolute;
+  bottom: 24vh;
+  color: #fff;
+}
+
+.platform-android .athlitikaColor {
+  background-color: #2b7127;
+  position: absolute;
+  bottom: 26vh;
+  color: #fff;
+}
+
+.platform-ios .athlitikaColor {
+  background-color: #2b7127;
+  position: absolute;
+  bottom: 24vh;
+  color: #fff;
+}
+
+.platform-android .psihagogiaColor {
+  background-color: #b53965;
+  position: absolute;
+  bottom: 26vh;
+  color: #fff;
+}
+
+.platform-ios .psihagogiaColor {
+  background-color: #b53965;
+  position: absolute;
+  bottom: 24vh;
+  color: #fff;
+}
+
+.platform-android .diethniColor {
+  background-color: #ef4144;
+  position: absolute;
+  bottom: 26vh;
+  color: #fff;
+}
+
+.platform-ios .diethniColor {
+  background-color: #ef4144;
+  position: absolute;
+  bottom: 24vh;
+  color: #fff;
 }
 
 .limitThreeLines {
   overflow: hidden !important;
   text-overflow: ellipsis;
   display: -webkit-box;
-  font-size: 1.4rem;
+  font-size: 1.3rem !important;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  line-height: 1.6rem;
-  max-height: 5.0rem;
+  line-height: 1.5rem;
+  max-height: 5.1rem;
+}
+
+.limitTwoLines {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 1.2rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1.3rem;
+  max-height: 2.6rem;
 }

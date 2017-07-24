@@ -1,6 +1,12 @@
 page-home {
 }
 
+ion-slide h4 {
+  font-size: 1.4rem;
+  text-align: left;
+  color: #f4f4f4;
+}
+
 ion-slide img {
   height: 30vh !important;
   width: auto !important;
@@ -8,10 +14,12 @@ ion-slide img {
 }
 
 ion-slide p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
+  text-align: left;
+  color: #f4f4f4;
 }
 
 .marginHeader {
@@ -19,8 +27,68 @@ ion-slide p {
   margin-bottom: 3px;
 }
 
+.platform-ios #firstBadge {
+  background-color: #4d5865;
+  position: absolute;
+  left: 20px;
+  bottom: 18vh;
+}
+
+.platform-android #firstBadge {
+  background-color: #4d5865;
+  position: absolute;
+  left: 20px;
+  bottom: 19vh;
+}
+
+.platform-ios #secondBadge {
+  background-color: #00aeef;
+  position: absolute;
+  left: 20px;
+  bottom: 18vh;
+}
+
+.platform-android #secondBadge {
+  background-color: #00aeef;
+  position: absolute;
+  left: 20px;
+  bottom: 19vh;
+}
+
+.platform-ios #thirdBadge {
+  background-color: #ef4144;
+  position: absolute;
+  left: 20px;
+  bottom: 18vh;
+}
+
+.platform-android #thirdBadge {
+  background-color: #ef4144;
+  position: absolute;
+  left: 20px;
+  bottom: 19vh;
+}
+
 .lightGrey {
   background-color: #f4f4f4;
+}
+
+ion-item hr {
+  border-bottom: 1px solid #9e9e9e;
+  position: absolute;
+  left: 4.5em;
+  right: 0px;
+}
+
+#limitTwoLines {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 1.2rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1.3rem;
+  max-height: 2.6rem;
 }
 
 .darkerGrey {
@@ -64,6 +132,12 @@ ion-slide p {
   border-right: 1px solid #a09185;
 }
 
-#whiteColor {
-  color: #fff;
+#editorChoice {
+  color: #a5a5a5;
+  font-size: 1rem;
+}
+
+#editorP {
+  color: #000;
+  font-size: 1.2rem;
 }

@@ -6,69 +6,151 @@
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <ion-slides text-wrap autoplay="3000" style="height:53%; background-color:#BBBFC4">
+  <ion-slides text-wrap autoplay="3000" style="height:65%; background-color:#252525">
     <ion-slide>
-        <img src="http://alphanews.live/sites/default/files/styles/media_image/public/2017-07/cna_t6046461596d049cd8e26cf7f6081a029.jpg?itok=B2R0xnDw" />
-        <p>Σε εξέλιξη δεύτερη συνεδρίαση του Εθνικού Συμβουλίου μετά το Κραν Μοντάνα (ΦΩΤΟ)</p>
+        <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-04/imagehandler.jpg?itok=YYCi15QN" />
+        <ion-badge id="firstBadge">Πολιτική</ion-badge>
+        <h4>Η Ελλάδα στις αγορές</h4>
+        <p>Θετικά αντιδρούν τα χρηματιστήρια - Αισιόδοξη η ελληνική κυβέρνηση</p>
+        <ion-item class="transparent">
+          <ion-icon name="ios-clock-outline" color="lightGrey" item-start> 24/7/20107 - 14:36</ion-icon>
+          <ion-icon name="md-share" padding-right color="pnored" item-end> {{main?.time}}</ion-icon>
+          <ion-icon name="md-bookmark" color="pnored" item-end></ion-icon>
+        </ion-item>
     </ion-slide>
     <ion-slide>
-        <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-06/spe.jpg?itok=6ZneLulq" />
-        <p>Η Altamira αναλαμβάνει δράση για τα κόκκινα δάνεια του Συνεργατισμού</p>
+        <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/cna_td4d95894f16a41babbce81a04d48e971.jpg?itok=1_Ug4J08" />
+        <ion-badge id="secondBadge">Ελλάδα</ion-badge>
+        <h4>Επιμένει στα ίδια, εκνευρίζοντας περαιτέρω το Προεδρικό ο Έιντε</h4>
+        <p>Τέσσερις ώρες διήρκησε η συνάντηση Αναστασιάδη-Έιντε</p>
+        <ion-item class="transparent">
+          <ion-icon name="ios-clock-outline" color="lightGrey" item-start> 24/7/20107 - 14:36</ion-icon>
+          <ion-icon name="md-share" padding-right color="pnored" item-end> {{main?.time}}</ion-icon>
+          <ion-icon name="md-bookmark" color="pnored" item-end></ion-icon>
+        </ion-item>
     </ion-slide>
     <ion-slide>
-        <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/2_-_1000.jpg?itok=a1ngNj38" />
-        <p>Ακυβέρνητο ιστιοπλοϊκό σκάφος, πλέει 75 ναυτικά μίλια νότια της Λεμεσού (BINTEO)</p>
+        <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/20246260_10154698087203639_4783490067408838866_n.jpg?itok=c-55c6nW" />
+        <ion-badge id="thirdBadge">Διεθνή</ion-badge>
+        <h4>Ένταλμα σύλληψης εναντίον 49χρονου για τον φόνο τα ξημερώματα στη Λεμεσό (ΦΩΤΟ)</h4>
+        <p>Έρευνες στην οικία όπου διαμένει, απέναντι απο το διαμέρισμα όπου μαχαίρωσε τον 45χρονο</p>
+        <ion-item class="transparent">
+          <ion-icon name="ios-clock-outline" color="lightGrey" item-start> 24/7/20107 - 14:36</ion-icon>
+          <ion-icon name="md-share" padding-right color="pnored" item-end> {{main?.time}}</ion-icon>
+          <ion-icon name="md-bookmark" color="pnored" item-end></ion-icon>
+        </ion-item>
     </ion-slide>
   </ion-slides>
-
-  <ion-item class="lightGrey">
-      <ion-title>editor's choice</ion-title>
+  <ion-item class="transparent" no-padding>
       <ion-grid>
       <ion-row text-wrap align-items-streched>
-        <ion-col col-6 class="darkerGrey">
-          <img src="https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/westcapella750.jpg?itok=OFTwHkeD" />
+        <ion-col col-7 class="transparent">
+          <img src="http://alphanews.live/sites/default/files/styles/media_image/public/2017-07/b_64.jpg?itok=lfbzx1Ob" />
         </ion-col>
-        <ion-col col-6 class="darkGrey">
-        <p id="whiteColor" class="limitThreeLines">
-            Κατεβαίνει το τρυπάνι του West Capella
-        </p>
+        <ion-col col-5>
+          <ion-row no-padding>
+            <p id="editorChoice">Editor's Choice</p>
+          </ion-row>
+          <ion-row no-padding>
+            <b><p id ="editorP" class="limitThreeLines">
+                ΑΚΕΛ: Επικαιροποιούν τις θέσεις τους με Μαλά και προχωρούν
+            </p></b>
+            <p id="limitTwoLines">
+              Κυπριανού: Πρέπει να έχει πολιτική βούληση για να εργασθεί άμεσα για λύση
+            </p>
+        </ion-row>
     </ion-col>
   </ion-row>
 </ion-grid>
+<ion-item padding-left class="transparent">
+  <ion-icon name="ios-clock-outline" color="lightGrey" item-start> 24/7/20107 - 14:36</ion-icon>
+  <ion-icon name="md-share" padding-right color="pnored" item-end> {{main?.time}}</ion-icon>
+  <ion-icon name="md-bookmark" color="pnored" item-end></ion-icon>
+</ion-item>
 </ion-item>
 <ion-item class="transparent" padding-left>
   <img style="width:100%" src="http://ca.cubecdn.net/20170717082825_wmid_135300.jpg" />
 </ion-item>
-<ion-item class="lightGrey">
-  <ion-title>Κύπρος</ion-title>
+<ion-item>
+  <ion-item><hr/><p>Κύπρος</p></ion-item>
   <ion-grid>
   <ion-row align-items-baseline>
     <ion-col text-wrap col-6>
-      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-03/ASTYNOMIA.jpg?itok=JEnK3neM'
-                         typeText='Σοβαρό κίνδυνο διέτρεξε αστυνομικός στον αυτοκινητόδρομο Λευκωσίας-Λεμεσού'></list-item>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-04/aek_reyma.jpg?itok=imDiw4J0'
+                         typeCat="Κύπρος" typeColorBadge="kiprosColor" typeSubText="Ερευνά υπόθεση λειτουργού με πλαστά έγγραφα η Αστυνομία" typeText='Κρούσματα κλοπής ρεύματος από την ΑΗΚ (ΒΙΝΤΕΟ)'></list-item>
     </ion-col>
     <ion-col col-6 text-wrap>
       <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/capture_1.jpg?itok=PllOn8Fu'
-                         typeText='Συνέλεξαν πλαστικά πώματα για τον Αντιρευματικό Σύνδεσμο (ΒΙΝΤΕΟ)'></list-item>
+                         typeCat="Κύπρος" typeColorBadge="kiprosColor" typeText='Συνέλεξαν πλαστικά πώματα για τον Αντιρευματικό Σύνδεσμο (ΒΙΝΤΕΟ)' typeSubText="Ερευνά υπόθεση λειτουργού με πλαστά έγγραφα η Αστυνομία"></list-item>
     </ion-col>
   </ion-row>
   </ion-grid>
 </ion-item>
-<ion-item class="lightGrey">
-  <ion-title>Αθλητικά</ion-title>
-  <ion-row>
-    <ion-col col-6 text-wrap>
-      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/phelchoyizen.jpeg?itok=7SAyphTX'
-                         typeText='Ιωνάς Νικολάου: «Ντροπή όσα έγιναν στο Δασάκι»'></list-item>
+<ion-item>
+  <ion-item><hr/><p>Πολιτική</p></ion-item>
+  <ion-grid>
+  <ion-row align-items-baseline>
+    <ion-col text-wrap col-6>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/stayros_malas.jpg?itok=sjYPuEfX'
+                         typeCat="Πολιτική" typeColorBadge="politikiColor" typeSubText="Σφοδρή επίθεση κατά του Ειδικού Συμβούλου εξαπέλυσε ο Νίκος Αναστασιάδης" typeText='Μαλάς στον Alpha: Οι πολίτες να δουν πίσω από τη βιτρίνα (ΒΙΝΤΕΟ)'></list-item>
     </ion-col>
     <ion-col col-6 text-wrap>
-      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-03/IONAS%20NIKOLAOY.jpg?itok=dHcpHtgW'
-                         typeText='Υπέγραψε, φωτογραφήθηκε και έκανε και τις πρώτες του δηλώσεις'></list-item>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/capture_1.jpg?itok=PllOn8Fu'
+                         typeCat="Πολιτική" typeColorBadge="politikiColor" typeText='Συνέλεξαν πλαστικά πώματα για τον Αντιρευματικό Σύνδεσμο (ΒΙΝΤΕΟ)' typeSubText="Διεργασίες για τις Προεδρικές από όλα τα κόμματα"></list-item>
     </ion-col>
   </ion-row>
+  </ion-grid>
+</ion-item>
+<ion-item class="transparent" padding-left>
+  <img style="width:100%" src="https://ca.cubecdn.net/20170717113856_wmid_135306.jpg" />
+</ion-item>
+<ion-item>
+  <ion-item><hr/><p>Αθλητικά</p></ion-item>
+  <ion-grid>
+  <ion-row align-items-baseline>
+    <ion-col text-wrap col-6>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/11ada_omonoia.jpg?itok=-hWOMaOh'
+                         typeCat="Αθλητικά" typeColorBadge="athlitikaColor" typeSubText="Η Ομόνοια επικράτησε με 1-0 της Χάποελ Τελ-Αβιβ" typeText='Πρώτη φιλική νίκη για την Ομόνοια (ΒΙΝΤΕΟ)'></list-item>
+    </ion-col>
+    <ion-col col-6 text-wrap>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/giakolits.jpg?itok=H7EcNlF9'
+                         typeCat="Αθλητικά" typeColorBadge="athlitikaColor" typeSubText="Ο Απόλλωνας απέκτησε υπό μορφή δανεισμού τον Κροάτη ακραίο επιθετικό" typeText='Ανακοίνωσαν Γιάκολιτς οι κυπελλούχοι'></list-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-item>
+<ion-item>
+  <ion-item><hr/><p>Ψυχαγωγία</p></ion-item>
+  <ion-grid>
+  <ion-row align-items-baseline>
+    <ion-col text-wrap col-6>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/q4wrqw4.jpg?itok=NYAsgbCr'
+                         typeCat="Ψυχαγωγία" typeColorBadge="psihagogiaColor" typeSubText="Σήμερα, τον αντιμετωπίζουν σαν εγκληματία και τον διώχνουν γιατί ...παίζει μουσική" typeText='Νεκτάριος Μαλλάς: Δύο χρόνια πριν είχε όλα τα φώτα της δημοσιότητας πάνω του'></list-item>
+    </ion-col>
+    <ion-col col-6 text-wrap>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/maxresdefault_5.jpg?itok=2Ny9IByU'
+                         typeCat="Ψυχαγωγία" typeColorBadge="psihagogiaColor" typeSubText="Βουγιουκλάκη, Παπαμιχαήλ, Κωνσταντάρας, Καρέζη, Βουτσάς, Καραγιάννη μας κρατάνε συντροφιά" typeText='Εβδομάδα Ελληνικού Κινηματογράφου από σήμερα μέχρι και τις 30 Ιουλίου'></list-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-item>
 <ion-item>
   <img src="https://xblasterads.com/hb/www/images/85443e4c0aab23b69b761ffcf4878e35.gif" />
+</ion-item>
+<ion-item>
+  <ion-item><hr/><p>Διεθνή</p></ion-item>
+  <ion-grid>
+  <ion-row align-items-baseline>
+    <ion-col text-wrap col-6>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/56814e0ed56ec1431d211ebe2b56f40c.jpg?itok=5rT5XWlC'
+                         typeCat="Διεθνή" typeColorBadge="diethniColor" typeSubText="Χωρίς τέλος η κόντρα Γερμανίας Τουρκίας" typeText='Σόιμπλε για Ερντογάν: Δεν θα τους επιτρέψουμε να μας εκβιάζουν'></list-item>
+    </ion-col>
+    <ion-col col-6 text-wrap>
+      <list-item imgSrc='https://alphanews.live/sites/default/files/styles/media_image/public/2017-07/cna_t002e6dbe0e704e1bac23db8290c08d07.jpg?itok=aR7eqWhA'
+                         typeCat="Διεθνή" typeColorBadge="diethniColor" typeSubText="Οι μεταρρυθμίσεις, το προεδρικό βέτο και οι αντιδράσεις" typeText='Πολωνία: Γιατί και πώς η χώρα οδηγείται σε κρίση (ΦΩΤΟ-ΒΙΝΤΕΟ)'></list-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-item>
 </ion-content>
 <ion-footer class="backColor">
