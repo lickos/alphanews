@@ -4,12 +4,17 @@
   }
 }
 
+.cyprusBar {
+  background-color: #ff0000;
+  height: 100%;
+}
+
 .noUpper {
   text-transform: none !important;
 }
 
 .greyClr {
-  background-color: #9b9b9b;
+  background-color: #252525;
   color: #fff;
 }
 
@@ -21,4 +26,50 @@
 .evenDarker {
   background-color: #4a4a4a;
   color: #fff;
+}
+
+.noMargin {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.lighter {
+  background-color: #333333;
+  color: #fff;
+}
+
+.socialHead {
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+  color: #828282;
+}
+
+.socialText {
+  font-size: 1.1rem;
+  margin-top: 0px;
+  color: #828282;
+}
+
+.socialIcons {
+  background-color: #fff !important;
+  font-size: 2rem;
+}
+
+.darkMenu {
+  background-color: #161616;
+}
+
+.socialText2 {
+  font-size: 1.1rem;
+  margin-top: 0px;
+  color: #e53b3d;
+}
+
+.socialIcons2 {
+  background-color: #161616 !important;
+  font-size: 2.5rem;
+}
+
+.statsLight {
+  color: #828282 !important;
 }

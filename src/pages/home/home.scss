@@ -31,42 +31,42 @@ ion-slide p {
   background-color: #4d5865;
   position: absolute;
   left: 20px;
-  bottom: 18vh;
+  top: 31vh;
 }
 
 .platform-android #firstBadge {
   background-color: #4d5865;
   position: absolute;
   left: 20px;
-  bottom: 19vh;
+  top: 31vh;
 }
 
 .platform-ios #secondBadge {
   background-color: #00aeef;
   position: absolute;
   left: 20px;
-  bottom: 18vh;
+  top: 31vh;
 }
 
 .platform-android #secondBadge {
   background-color: #00aeef;
   position: absolute;
   left: 20px;
-  bottom: 19vh;
+  top: 31vh;
 }
 
 .platform-ios #thirdBadge {
   background-color: #ef4144;
   position: absolute;
   left: 20px;
-  bottom: 18vh;
+  top: 31vh;
 }
 
 .platform-android #thirdBadge {
   background-color: #ef4144;
   position: absolute;
   left: 20px;
-  bottom: 19vh;
+  top: 31vh;
 }
 
 .lightGrey {
@@ -124,8 +124,13 @@ ion-item hr {
   text-transform: none;
 }
 
+.centerAl {
+  text-align: center;
+  background-color: #e53b3d;
+}
+
 .backColor {
-  background-color: #222222;
+  background-color: #e53b3d;
 }
 
 .verticalLine {

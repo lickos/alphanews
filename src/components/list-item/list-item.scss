@@ -31,70 +31,70 @@ list-item {
 .platform-android .kiprosColor {
   background-color: #ccbd5f;
   position: absolute;
-  bottom: 26vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-ios .kiprosColor {
   background-color: #ccbd5f;
   position: absolute;
-  bottom: 24vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-android .politikiColor {
   background-color: #4d5865;
   position: absolute;
-  bottom: 26vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-ios .politikiColor {
   background-color: #4d5865;
   position: absolute;
-  bottom: 24vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-android .athlitikaColor {
   background-color: #2b7127;
   position: absolute;
-  bottom: 26vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-ios .athlitikaColor {
   background-color: #2b7127;
   position: absolute;
-  bottom: 24vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-android .psihagogiaColor {
   background-color: #b53965;
   position: absolute;
-  bottom: 26vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-ios .psihagogiaColor {
   background-color: #b53965;
   position: absolute;
-  bottom: 24vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-android .diethniColor {
   background-color: #ef4144;
   position: absolute;
-  bottom: 26vh;
+  top: 11vh;
   color: #fff;
 }
 
 .platform-ios .diethniColor {
   background-color: #ef4144;
   position: absolute;
-  bottom: 24vh;
+  top: 11vh;
   color: #fff;
 }
 
@@ -106,7 +106,7 @@ list-item {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-height: 1.5rem;
-  max-height: 5.1rem;
+  height: 4.7rem !important;
 }
 
 .limitTwoLines {

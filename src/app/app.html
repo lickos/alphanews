@@ -1,18 +1,41 @@
 <ion-menu [content]="content">
   <ion-header padding-top class="greyClr">
     <ion-item class="greyClr">
-      <ion-icon item-left color="dark" menuClose name="md-close"></ion-icon>
-      <img src="assets/img/logo.svg" />
-      <button item-end ion-button icon-right clear class="noUpper" color="dark"><b>Ρυθμίσεις</b><ion-icon name="md-more"></ion-icon></button>
+      <ion-row>
+        <ion-col col-2>
+          <ion-icon class="headIcon" color="pnored" menuClose name="md-close"></ion-icon>
+        </ion-col>
+        <ion-col col-6>
+          <img src="assets/img/logo-fullwhite.png" />
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button icon-end clear class="noUpper noMargin" color="pnored"><b>Ρυθμίσεις </b><ion-icon class="headIcon" name="md-more"></ion-icon></button>
+        </ion-col>
+      </ion-row>
+
+        <ion-item class="greyClr" no-padding>
+          <ion-icon item-end color="light" class="noMargin" name="home"></ion-icon>
+        </ion-item>
+
     </ion-item>
 </ion-header>
 
-  <ion-content class="greyClr">
+  <ion-content class="lighter">
     <ion-list>
-      <button class="greyClr" menuClose ion-item (click)="openCyprus()">
-        Κύπρος
+      <button class="lighter" no-padding menuClose ion-item (click)="openCyprus()">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-1>
+              <div class="cyprusBar"></div>
+            </ion-col>
+            <ion-col col-11>
+              <div>Κύπρος</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
       </button>
-      <button class="greyClr" ion-item (click)="showSubItems()">
+      <button class="lighter" ion-item (click)="showSubItems()">
         Πολιτική
         <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
@@ -22,13 +45,13 @@
         <button class="darker" *ngIf="showMe" ion-item (click)="showItems()">
           Ενέργεια
         </button>
-      <button class="greyClr" menuClose ion-item (click)="openEllada()">
+      <button class="lighter" menuClose ion-item (click)="openEllada()">
         Ελλάδα
       </button>
-      <button class="greyClr" menuClose ion-item (click)="openDiethni()">
+      <button class="lighter" menuClose ion-item (click)="openDiethni()">
         Διεθνή
       </button>
-      <button class="greyClr" ion-item (click)="showSubItems2()">
+      <button class="lighter" ion-item (click)="showSubItems2()">
         Αθλητικά
         <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
@@ -44,10 +67,10 @@
         <button class="darker" menuClose *ngIf="showMe2" ion-item (click)="openAthlitismos()">
           Αθλητισμός
         </button>
-      <button class="greyClr" menuClose ion-item (click)="openOikonomia()">
+      <button class="lighter" menuClose ion-item (click)="openOikonomia()">
         Οικονομία
       </button>
-      <button class="greyClr" ion-item (click)="showYgeiaItems()">
+      <button class="lighter" ion-item (click)="showYgeiaItems()">
         Υγεία
       <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
@@ -57,7 +80,7 @@
         <button class="darker" no-lines menuClose *ngIf="showYgeia" ion-item (click)="openDiethniProtathlimata()">
           Ψυχολογία
         </button>
-      <button class="greyClr" ion-item (click)="showPsichItems()">
+      <button class="lighter" ion-item (click)="showPsichItems()">
         Ψυχαγωγία
       <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
@@ -73,23 +96,68 @@
         <button class="darker" *ngIf="showPsich" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
           Κουζίνα
         </button>
-      <button class="greyClr" menuClose ion-item (click)="openOikonomia()">
+      <button class="lighter" menuClose ion-item (click)="openOikonomia()">
         Blog
       </button>
-      <button class="greyClr" menuClose ion-item (click)="openOikonomia()">
+      <button class="lighter" menuClose ion-item (click)="openOikonomia()">
         Λούης Night Show
       </button>
-      <button class="evenDarker" menuClose ion-item (click)="openOikonomia()">
-        Πείτε μας τη γνώμη σας
-        <ion-icon name="ios-chatbubbles-outline" item-end></ion-icon>
-      </button>
-      <ion-row>
-        <ion-grid>
-        </ion-grid>
-      </ion-row>
-    </ion-list>
-  </ion-content>
+      <ion-grid>
+        <ion-row text-wrap align-items-center class="greyClr">
+          <ion-col col-6>
+            <p class="socialHead">
+              ΑΚΟΛΟΥΘΗΣΕ ΜΑΣ
+            </p>
+            <p class="socialText">
+              στα Social Media για να είσαι πάντα ενημερωμένος
+            </p>
+          </ion-col>
+          <ion-col col-2>
+            <ion-badge class="socialIcons"><ion-icon color="dark" name="logo-facebook"></ion-icon></ion-badge>
+          </ion-col>
+          <ion-col col-2>
+            <ion-badge class="socialIcons"><ion-icon color="dark" name="logo-twitter"></ion-icon></ion-badge>
+          </ion-col>
+          <ion-col col-2>
+            <ion-badge class="socialIcons"><ion-icon color="dark" name="logo-youtube"></ion-icon></ion-badge>
+          </ion-col>
+        </ion-row>
+        <ion-row text-wrap align-items-center class="darkMenu">
+          <ion-col col-9>
+            <p class="socialHead">
+              ΔΗΜΟΣΚΟΠΗΣΗ
+            </p>
+            <p class="socialText2">
+              Πείτε μας τη γνώμη σας
+            </p>
+          </ion-col>
+          <ion-col col-3>
+            <ion-badge class="socialIcons2"><ion-icon class="statsLight" name="ios-stats-outline"></ion-icon></ion-badge>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
+    </ion-list>
+    <ion-grid class="backColor">
+      <ion-row no-padding>
+        <ion-col col-4 class="verticalLine">
+          <button ion-button full color="dark" icon-right class="noPad" (click)="openUseful()">Χρήσιμα
+            <ion-icon name="ios-pricetag-outline"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-4 class="verticalLine">
+          <button ion-button full color="dark" icon-right class="noPad">TVnews
+            <ion-icon name="md-desktop"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button full color="dark" icon-right class="noPad">Report
+            <ion-icon name="ios-chatbubbles-outline"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

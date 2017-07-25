@@ -152,23 +152,24 @@
   </ion-row>
 </ion-grid>
 </ion-item>
-</ion-content>
-<ion-footer class="backColor">
-  <ion-row no-padding>
+<ion-grid class="backColor">
+  <ion-row no-padding justify-content-center>
     <ion-col col-4 class="verticalLine">
-      <button ion-button full color="dark" icon-right class="noPad" (click)="openUseful()">Χρήσιμα
-        <ion-icon name="ios-pricetag-outline"></ion-icon>
+      <button ion-button clear icon-left class="centerAl" (click)="openUseful()">
+        <ion-icon color="darkRed" name="ios-pricetag-outline"></ion-icon>
+        Χρήσιμα
       </button>
     </ion-col>
     <ion-col col-4 class="verticalLine">
-      <button ion-button full color="dark" icon-right class="noPad">TVnews
+      <button ion-button full color="pnored" icon-right class="noPad">TVnews
         <ion-icon name="md-desktop"></ion-icon>
       </button>
     </ion-col>
     <ion-col col-4>
-      <button ion-button full color="dark" icon-right class="noPad">Report
+      <button ion-button full color="pnored" icon-right class="noPad">Report
         <ion-icon name="ios-chatbubbles-outline"></ion-icon>
       </button>
     </ion-col>
   </ion-row>
-</ion-footer>
+</ion-grid>
+</ion-content>
