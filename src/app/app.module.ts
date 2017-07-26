@@ -14,6 +14,7 @@ import { UsefulPage } from '../pages/useful/useful';
 import { PolitikiPage } from '../pages/politiki/politiki';
 import { ElladaPage } from '../pages/ellada/ellada';
 import { DiethniPage } from '../pages/diethni/diethni';
+import { ArticlePage } from '../pages/article/article';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,6 +22,7 @@ import { ListItemComponent } from '../components/list-item/list-item';
 import { AlphaheaderComponent } from '../components/alphaheader/alphaheader';
 import { WeatherComponent } from '../components/weather/weather';
 import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
+import { OpenArticlePageProvider } from '../providers/open-article-page/open-article-page';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
     PolitikiPage,
     ReplacequotesPipe,
     ElladaPage,
-    DiethniPage
+    DiethniPage,
+    ArticlePage
   ],
   imports: [BrowserModule, HttpModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -51,8 +54,10 @@ import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
     SearchPage,
     UsefulPage,
     PolitikiPage,
-    DiethniPage
+    DiethniPage,
+    ArticlePage
   ],
-  providers: [StatusBar, SplashScreen, Geolocation, { provide: ErrorHandler, useClass: IonicErrorHandler }]
+  providers: [StatusBar, SplashScreen, Geolocation, { provide: ErrorHandler, useClass: IonicErrorHandler },
+    OpenArticlePageProvider]
 })
 export class AppModule {}

@@ -4,8 +4,27 @@
   }
 }
 
-.cyprusBar {
-  background-color: #ff0000;
+@font-face {
+  font-family: AppFont;
+  src: url("../assets/fonts/RobotoCondensed-Regular.ttf");
+}
+
+body,
+span,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ion-item,
+ion-title {
+  font-family: 'AppFont' !important;
+}
+
+.catBar {
   height: 100%;
 }
 
@@ -31,6 +50,10 @@
 .noMargin {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
+}
+
+.homeIc {
+  font-size: 3rem !important;
 }
 
 .lighter {

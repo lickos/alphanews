@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Content } from 'ionic-angular';
+import { ArticlePage } from '../article/article';
 
 @Component({
   selector: 'page-cyprus',
@@ -53,4 +54,9 @@ export class CyprusPage {
       this.backExist = false;
     }
   }
+
+  openArticle(article) {
+    this.navCtrl.push(ArticlePage, {'item':article});
+  }
+
 }

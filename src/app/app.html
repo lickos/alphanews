@@ -12,31 +12,44 @@
           <button ion-button icon-end clear class="noUpper noMargin" color="pnored"><b>Ρυθμίσεις </b><ion-icon class="headIcon" name="md-more"></ion-icon></button>
         </ion-col>
       </ion-row>
-
         <ion-item class="greyClr" no-padding>
-          <ion-icon item-end color="light" class="noMargin" name="home"></ion-icon>
+          <ion-icon item-end menuClose color="light" class="noMargin homeIc" name="ios-home-outline" (click)="openHome()" ></ion-icon>
         </ion-item>
-
     </ion-item>
 </ion-header>
 
   <ion-content class="lighter">
     <ion-list>
-      <button class="lighter" no-padding menuClose ion-item (click)="openCyprus()">
+
+      <button class="lighter" no-padding ion-item (click)="openCyprus()">
         <ion-grid>
           <ion-row>
             <ion-col col-1>
-              <div class="cyprusBar"></div>
+              <div style="border-right: 5px solid #b79033" class="catBar"></div>
             </ion-col>
             <ion-col col-11>
               <div>Κύπρος</div>
             </ion-col>
           </ion-row>
         </ion-grid>
-
+        <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
-      <button class="lighter" ion-item (click)="showSubItems()">
-        Πολιτική
+      <button class="darker" no-lines menuClose *ngIf="showMeCyp" ion-item>
+        Νέα Αγοράς
+      </button>
+
+      <button class="lighter" no-padding ion-item (click)="openPolitiki()">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-1>
+              <div style="border-right: 5px solid #243656" class="catBar"></div>
+            </ion-col>
+            <ion-col col-9>
+              <div>Πολιτική</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
         <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
         <button class="darker" no-lines menuClose *ngIf="showMe" ion-item (click)="openPolitiki()">
@@ -45,11 +58,29 @@
         <button class="darker" *ngIf="showMe" ion-item (click)="showItems()">
           Ενέργεια
         </button>
-      <button class="lighter" menuClose ion-item (click)="openEllada()">
-        Ελλάδα
+      <button class="lighter" no-padding menuClose ion-item (click)="openEllada()">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-1>
+              <div style="border-right: 5px solid #2264a7" class="catBar"></div>
+            </ion-col>
+            <ion-col col-9>
+              <div>Ελλάδα</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </button>
-      <button class="lighter" menuClose ion-item (click)="openDiethni()">
-        Διεθνή
+      <button class="lighter" no-padding menuClose ion-item (click)="openEllada()">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-1>
+              <div style="border-right: 5px solid #ef4144" class="catBar"></div>
+            </ion-col>
+            <ion-col col-9>
+              <div>Διεθνή</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </button>
       <button class="lighter" ion-item (click)="showSubItems2()">
         Αθλητικά
