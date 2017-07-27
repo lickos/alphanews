@@ -1,0 +1,22 @@
+<!-- Generated template for the BottomfooterComponent component -->
+<ion-item class="diagonal-background" (click)="showthis()">
+    <!-- this is an empty element -->
+    <ion-icon name="ios-arrow-up-outline" *ngIf="showUp" item-right class="arrow"></ion-icon>
+    <ion-icon name="ios-arrow-down-outline" *ngIf="showDown" item-right class="arrow"></ion-icon>
+</ion-item>
+<ion-item class="bottom-button" no-padding padding-left *ngIf="showbottom">
+  <ion-row no-padding>
+    <ion-col col-3 no-padding>
+      <button ion-button block class="border-right"><ion-icon name="home"></ion-icon></button>
+    </ion-col>
+    <ion-col col-3 no-padding>
+      <button ion-button block class="border-right"><ion-icon name="ios-information-circle-outline"></ion-icon></button>
+    </ion-col>
+    <ion-col col-3 no-padding>
+      <button ion-button block class="border-right"><ion-icon name="ios-information-circle-outline"></ion-icon></button>
+    </ion-col>
+    <ion-col col-3 no-padding>
+      <button ion-button block class="colorRed"><ion-icon name="ios-information-circle-outline"></ion-icon></button>
+    </ion-col>
+  </ion-row>
+</ion-item>

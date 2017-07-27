@@ -1,0 +1,31 @@
+.diagonal-background {
+  width: 100%;
+  background-size: cover;
+  background-image: url(../assets/img/diagonal-bg.png);
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.arrow {
+  font-size: 3rem !important;
+  color: #fff;
+  margin-top: 10px !important;
+  margin-bottom: 2px !important;
+}
+
+.bottom-button {
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color: #dd3132;
+}
+
+.border-right {
+  border-right: 2px solid #fff;
+  background-color: #dd3132;
+}
+
+.colorRed {
+  background-color: #dd3132;
+}

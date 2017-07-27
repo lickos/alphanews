@@ -14,6 +14,9 @@
   </ion-row>
   <b><h5 no-padding-top>{{items.title}}</h5></b>
   <p class="author">Συνταχθηκε από: <b>{{items.author}}</b></p>
-  <p>{{items.content}}</p>
-
+  <p>{{items.content | cleararticles | createp | replacebr | replacediv}}</p>
+<ion-item>
+  <img src="http://alphanews.live/themes/alpha/banners/metagrafes_pno.jpg" />
+</ion-item>
+<bottomfooter></bottomfooter>
 </ion-content>

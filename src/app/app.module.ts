@@ -23,6 +23,11 @@ import { AlphaheaderComponent } from '../components/alphaheader/alphaheader';
 import { WeatherComponent } from '../components/weather/weather';
 import { ReplacequotesPipe } from '../pipes/replacequotes/replacequotes';
 import { OpenArticlePageProvider } from '../providers/open-article-page/open-article-page';
+import { CleararticlesPipe } from '../pipes/cleararticles/cleararticles';
+import { CreatepPipe } from '../pipes/createp/createp';
+import { ReplacedivPipe } from '../pipes/replacediv/replacediv';
+import { ReplacebrPipe } from '../pipes/replacebr/replacebr';
+import { BottomfooterComponent } from '../components/bottomfooter/bottomfooter';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { OpenArticlePageProvider } from '../providers/open-article-page/open-art
     ReplacequotesPipe,
     ElladaPage,
     DiethniPage,
-    ArticlePage
+    ArticlePage,
+    CleararticlesPipe,
+    CreatepPipe,
+    ReplacedivPipe,
+    ReplacebrPipe,
+    BottomfooterComponent
   ],
   imports: [BrowserModule, HttpModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
