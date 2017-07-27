@@ -12,7 +12,7 @@
       <ion-icon name="bookmark" color="pnored" item-end></ion-icon>
     </ion-item>
   </ion-row>
-  <b><h5 no-padding-top>{{items.title}}</h5></b>
+  <b><h5 no-padding-top>{{items.title | replacequotes}}</h5></b>
   <p class="author">Συνταχθηκε από: <b>{{items.author}}</b></p>
   <!-- <p>{{items.content | cleararticles | createp | replacebr | replacediv}}</p> -->
   <p id="test"></p>
