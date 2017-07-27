@@ -8,6 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ArticlePage {
   items: any;
+  el:HTMLElement
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.items = this.navParams.get('item')
@@ -15,6 +16,9 @@ export class ArticlePage {
 
   ionViewDidLoad() {
     console.log(this.items);
+    let artCont = this.items.content;
+    this.el = document.getElementById('test');
+    this.el.innerHTML = artCont;
   }
 
 }
