@@ -16,6 +16,7 @@ import { ElladaPage } from '../pages/ellada/ellada';
 import { DiethniPage } from '../pages/diethni/diethni';
 import { ArticlePage } from '../pages/article/article';
 import { SportsPage } from '../pages/sports/sports';
+import { SplashPage } from '../pages/splash/splash';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -52,7 +53,8 @@ import { BottomfooterComponent } from '../components/bottomfooter/bottomfooter';
     ReplacedivPipe,
     ReplacebrPipe,
     BottomfooterComponent,
-    SportsPage
+    SportsPage,
+    SplashPage
   ],
   imports: [BrowserModule, HttpModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -68,7 +70,8 @@ import { BottomfooterComponent } from '../components/bottomfooter/bottomfooter';
     PolitikiPage,
     DiethniPage,
     ArticlePage,
-    SportsPage
+    SportsPage,
+    SplashPage
   ],
   providers: [
     StatusBar,
