@@ -1,8 +1,17 @@
 page-article {
-
 }
 
 .author {
-    color: #666c73;
-    font-size: 1.3rem;
+  color: #666c73;
+  font-size: 1.3rem;
+}
+
+.ArticleImage {
+  height: 30vh;
+}
+
+.BadgeHeight {
+  position: absolute;
+  top: 31vh !important;
+  left: 6vw;
 }

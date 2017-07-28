@@ -4,7 +4,8 @@
 </ion-header>
 
 <ion-content padding>
-  <img src="{{items.image_url}}"/>
+  <img src="{{items.image_url}}" class="ArticleImage"/>
+  <ion-badge class="{{BadgeClass}} BadgeHeight">{{items.category}}</ion-badge>
   <ion-row>
     <ion-item class="transparent">
       <ion-icon name="ios-clock-outline" color="darkGrey" item-start> {{items.date}} - {{items.time}}</ion-icon>

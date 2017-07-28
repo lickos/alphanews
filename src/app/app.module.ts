@@ -15,6 +15,7 @@ import { PolitikiPage } from '../pages/politiki/politiki';
 import { ElladaPage } from '../pages/ellada/ellada';
 import { DiethniPage } from '../pages/diethni/diethni';
 import { ArticlePage } from '../pages/article/article';
+import { SportsPage } from '../pages/sports/sports';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -50,7 +51,8 @@ import { BottomfooterComponent } from '../components/bottomfooter/bottomfooter';
     CreatepPipe,
     ReplacedivPipe,
     ReplacebrPipe,
-    BottomfooterComponent
+    BottomfooterComponent,
+    SportsPage
   ],
   imports: [BrowserModule, HttpModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -65,9 +67,15 @@ import { BottomfooterComponent } from '../components/bottomfooter/bottomfooter';
     UsefulPage,
     PolitikiPage,
     DiethniPage,
-    ArticlePage
+    ArticlePage,
+    SportsPage
   ],
-  providers: [StatusBar, SplashScreen, Geolocation, { provide: ErrorHandler, useClass: IonicErrorHandler },
-    OpenArticlePageProvider]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    Geolocation,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    OpenArticlePageProvider
+  ]
 })
 export class AppModule {}

@@ -8,6 +8,7 @@ import { CyprusPage } from '../pages/cyprus/cyprus';
 import { PolitikiPage } from '../pages/politiki/politiki';
 import { ElladaPage } from '../pages/ellada/ellada';
 import { DiethniPage } from '../pages/diethni/diethni';
+import { SportsPage } from '../pages/sports/sports';
 import { MenuController } from 'ionic-angular';
 
 @Component({
@@ -67,6 +68,12 @@ export class MyApp {
 
   openDiethni() {
     this.nav.push(DiethniPage);
+  }
+
+  openSports() {
+    if (this.showMe2) {
+      this.nav.push(SportsPage);
+    } else this.showMe2 = !this.showMe2;
   }
 
   showSubItems() {

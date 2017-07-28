@@ -6,13 +6,13 @@ import { Content } from 'ionic-angular';
 import { ArticlePage } from '../article/article';
 
 @Component({
-  selector: 'page-diethni',
-  templateUrl: 'diethni.html'
+  selector: 'page-sports',
+  templateUrl: 'sports.html'
 })
-export class DiethniPage {
+export class SportsPage {
   @ViewChild(Content) content: Content;
   page: any;
-  url: string = 'https://alphanews.live/json/cat/5?page=';
+  url: string = 'https://alphanews.live/json/cat/6?page=';
   main: string;
   first: string;
   rest: string;
@@ -44,10 +44,6 @@ export class DiethniPage {
     this.content.scrollToTop();
   }
 
-  openArticle(article) {
-    this.navCtrl.push(ArticlePage, { item: article });
-  }
-
   goToBackPage() {
     this.page -= 1;
     this.getTheData(this.page);
@@ -55,5 +51,9 @@ export class DiethniPage {
     if (this.page == 0) {
       this.backExist = false;
     }
+  }
+
+  openArticle(article) {
+    this.navCtrl.push(ArticlePage, { item: article });
   }
 }

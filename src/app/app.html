@@ -20,14 +20,12 @@
 
   <ion-content class="lighter">
     <ion-list>
-
       <button class="lighter" no-padding ion-item (click)="openCyprus()">
         <ion-grid>
           <ion-row>
-            <ion-col col-1>
-              <div style="border-right: 5px solid #b79033" class="catBar"></div>
+            <ion-col col-1 class="CyprusCol">
             </ion-col>
-            <ion-col col-11>
+            <ion-col col-11 padding-left>
               <div>Κύπρος</div>
             </ion-col>
           </ion-row>
@@ -41,15 +39,13 @@
       <button class="lighter" no-padding ion-item (click)="openPolitiki()">
         <ion-grid>
           <ion-row>
-            <ion-col col-1>
-              <div style="border-right: 5px solid #243656" class="catBar"></div>
+            <ion-col col-1 class="PolitikiCol">
             </ion-col>
-            <ion-col col-9>
+            <ion-col col-9 padding-left>
               <div>Πολιτική</div>
             </ion-col>
           </ion-row>
         </ion-grid>
-
         <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
         <button class="darker" no-lines menuClose *ngIf="showMe" ion-item (click)="openPolitiki()">
@@ -61,29 +57,35 @@
       <button class="lighter" no-padding menuClose ion-item (click)="openEllada()">
         <ion-grid>
           <ion-row>
-            <ion-col col-1>
-              <div style="border-right: 5px solid #2264a7" class="catBar"></div>
+            <ion-col col-1 class="GreeceCol">
             </ion-col>
-            <ion-col col-9>
+            <ion-col col-9 padding-left>
               <div>Ελλάδα</div>
             </ion-col>
           </ion-row>
         </ion-grid>
       </button>
-      <button class="lighter" no-padding menuClose ion-item (click)="openEllada()">
+      <button class="lighter" no-padding menuClose ion-item (click)="openDiethni()">
         <ion-grid>
           <ion-row>
-            <ion-col col-1>
-              <div style="border-right: 5px solid #ef4144" class="catBar"></div>
+            <ion-col col-1 class="DiethniCol">
             </ion-col>
-            <ion-col col-9>
+            <ion-col col-9 padding-left>
               <div>Διεθνή</div>
             </ion-col>
           </ion-row>
         </ion-grid>
       </button>
-      <button class="lighter" ion-item (click)="showSubItems2()">
-        Αθλητικά
+      <button class="lighter" no-padding ion-item (click)="openSports()">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-1 class="SportsCol">
+            </ion-col>
+            <ion-col col-11 padding-left>
+              <div>Αθλητισμός</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
         <ion-icon item-end name="ios-arrow-down"></ion-icon>
       </button>
         <button class="darker" no-lines menuClose *ngIf="showMe2" ion-item (click)="openKypriakoProtathlima()">
@@ -98,23 +100,47 @@
         <button class="darker" menuClose *ngIf="showMe2" ion-item (click)="openAthlitismos()">
           Αθλητισμός
         </button>
-      <button class="lighter" menuClose ion-item (click)="openOikonomia()">
-        Οικονομία
-      </button>
-      <button class="lighter" ion-item (click)="showYgeiaItems()">
-        Υγεία
-      <ion-icon item-end name="ios-arrow-down"></ion-icon>
-      </button>
+        <button class="lighter" no-padding menuClose ion-item (click)="openDiethni()">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-1 class="EconomyCol">
+              </ion-col>
+              <ion-col col-9 padding-left>
+                <div>Οικονομία</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </button>
+        <button class="lighter" no-padding ion-item (click)="openHealth()">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-1 class="HealthCol">
+              </ion-col>
+              <ion-col col-11 padding-left>
+                <div>Υγεία</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-icon item-end name="ios-arrow-down"></ion-icon>
+        </button>
         <button class="darker" *ngIf="showYgeia" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
           Fitness
         </button>
         <button class="darker" no-lines menuClose *ngIf="showYgeia" ion-item (click)="openDiethniProtathlimata()">
           Ψυχολογία
         </button>
-      <button class="lighter" ion-item (click)="showPsichItems()">
-        Ψυχαγωγία
-      <ion-icon item-end name="ios-arrow-down"></ion-icon>
-      </button>
+        <button class="lighter" no-padding ion-item (click)="openHealth()">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-1 class="EntertainmentCol">
+              </ion-col>
+              <ion-col col-11 padding-left>
+                <div>Ψυχαγωγία</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-icon item-end name="ios-arrow-down"></ion-icon>
+        </button>
         <button class="darker" *ngIf="showPsich" no-lines menuClose ion-item (click)="openDiethniProtathlimata()">
           Προτάσεις
         </button>
