@@ -1,3 +1,33 @@
 page-splash {
+    
+}
 
+#firstImage {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 100%;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+    transition: top 1s;
+}
+
+#secondImage {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 100%;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+    transition: top 1s;
+}
+
+#thirdImage {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 100%;
+    transition-timing-function: ease;
+    transition-delay: 3s;
+    transition: top 1s;
 }
