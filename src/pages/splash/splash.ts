@@ -20,9 +20,9 @@ export class SplashPage {
     this.el = document.getElementById("firstImage");
     this.el2 = document.getElementById("secondImage");
     this.el3 = document.getElementById("thirdImage");
-    this.el.style.top = "20%";
-    this.el2.style.top = "25%";
-    this.el3.style.top = "30%";
+    this.el.style.top = "30%";
+    this.el2.style.top = "35%";
+    this.el3.style.top = "40%";
 
  
     this.splashScreen.hide();

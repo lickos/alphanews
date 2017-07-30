@@ -84,11 +84,23 @@ ion-item hr {
   overflow: hidden !important;
   text-overflow: ellipsis;
   display: -webkit-box;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-height: 1.3rem;
   max-height: 2.6rem;
+}
+
+.limitTwoLines {
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 1.2rem !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1.3rem;
+  max-height: 2.6rem;
+  color: #000;
 }
 
 .darkerGrey {
