@@ -9,7 +9,6 @@ export class CreatepPipe implements PipeTransform {
    */
   transform(value: string, ...args) {
     if (value) {
-      var p = '<p>';
       var pend = '</p>';
       var re = new RegExp(pend, 'g');
       return value.replace(re, '');

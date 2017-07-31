@@ -15,9 +15,9 @@
         </ion-col>
         <ion-col col-6 class="darkGrey">
 
-            <h4 class="limitThreeLines">
+            <b><p class="limitThreeLines">
               {{main?.title | replacequotes}}
-            </h4>
+            </p></b>
             <p class="limitTwoLines">
               {{main?.teaser | replacequotes}}
             </p>
@@ -38,9 +38,12 @@
           <img src="{{first?.image_url}}" />
         </ion-col>
       <ion-col col-7>
-      <h5 class="limitFourLines">
+      <b><p class="limitTwoLines">
         {{first?.title | replacequotes}}
-      </h5>
+      </p></b>
+      <p class="limitTwoLines">
+        {{first?.teaser | replacequotes}}
+      </p>
       </ion-col>
       <ion-item class="transparent">
         <ion-icon name="md-calendar" color="darkGrey" item-start> {{main?.date}}</ion-icon>
@@ -58,9 +61,12 @@
           <img src="{{item?.image_url}}" />
         </ion-col>
       <ion-col col-7>
-      <h5 class="limitFourLines">
+      <b><p class="limitTwoLines">
         {{item?.title | replacequotes}}
-      </h5>
+      </p></b>
+      <p class="limitTwoLines">
+        {{item?.teaser | replacequotes}}
+      </p>
       </ion-col>
       <ion-item class="transparent">
         <ion-icon name="md-calendar" color="darkGrey" item-start> {{item?.date}}</ion-icon>

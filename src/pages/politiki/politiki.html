@@ -8,20 +8,24 @@
   <ion-title padding-top class="centerAlign">
     Πολιτική
   </ion-title>
-  <ion-item class="lightGrey">
-      <ion-grid>
+  <ion-item class="lightGrey" (click)="openArticle(main)">
+    <ion-grid>
       <ion-row text-wrap align-items-streched>
         <ion-col col-6 class="darkerGrey">
           <div class="vertAlign">
             <img src="{{main?.image_url}}" />
           </div>
-          <ion-badge item-end class="intoTheDiv">{{main?.category}}</ion-badge>
         </ion-col>
-      <ion-col col-6 class="darkGrey centerVer">
-        <h4 class="limitFourLines">
-            {{main?.title | replacequotes}}
-        </h4>
-      </ion-col>
+        <ion-col col-6 class="darkGrey">
+
+            <b><p class="limitThreeLines">
+              {{main?.title | replacequotes}}
+            </p></b>
+            <p class="limitTwoLines">
+              {{main?.teaser | replacequotes}}
+            </p>
+
+        </ion-col>
     <ion-item class="transparent">
       <ion-icon name="md-calendar" color="darkGrey" item-start> {{main?.date}}</ion-icon>
       <ion-icon name="md-clock" color="darkGrey" item-start> {{main?.time}}</ion-icon>
@@ -30,55 +34,61 @@
   </ion-row>
 </ion-grid>
 </ion-item>
-  <ion-list no-lines >
-    <ion-item text-wrap>
-      <ion-row>
-        <ion-col col-5>
-          <img src="{{first?.image_url}}" />
-        </ion-col>
-      <ion-col col-7>
-      <h5 class="limitFourLines">
-        {{first?.title | replacequotes}}
-      </h5>
-      </ion-col>
-      <ion-item class="transparent">
-        <ion-icon name="md-calendar" color="darkGrey" item-start> {{main?.date}}</ion-icon>
-        <ion-icon name="md-clock" color="darkGrey" item-start> {{main?.time}}</ion-icon>
-        <ion-icon name="md-bookmark" color="darkGrey" item-end></ion-icon>
-      </ion-item>
-      </ion-row>
-    </ion-item>
-    <ion-item>
-      <img src="http://ca.cubecdn.net/20170717113856_wmid_135306.jpg"  />
-    </ion-item>
-    <ion-item text-wrap *ngFor="let item of rest">
-      <ion-row>
-        <ion-col col-5>
-          <img src="{{item?.image_url}}" />
-        </ion-col>
-      <ion-col col-7>
-      <h5 class="limitFourLines">
-        {{item?.title | replacequotes}}
-      </h5>
-      </ion-col>
-      <ion-item class="transparent">
-        <ion-icon name="md-calendar" color="darkGrey" item-start> {{item?.date}}</ion-icon>
-        <ion-icon name="md-clock" color="darkGrey" item-start> {{item?.time}}</ion-icon>
-        <ion-icon name="md-bookmark" color="darkGrey" item-end></ion-icon>
-      </ion-item>
-      </ion-row>
-    </ion-item>
+<ion-list no-lines >
+  <ion-item text-wrap (click)="openArticle(first)">
     <ion-row>
       <ion-col col-5>
-        <button ion-button icon-left clear *ngIf="backExist" class="darkerText" (click)="goToBackPage()"><ion-icon name="md-arrow-back"></ion-icon>Προηγούμενο</button>
+        <img src="{{first?.image_url}}" />
       </ion-col>
-      <ion-col col-2></ion-col>
-      <ion-col col-5>
-        <button ion-button icon-right clear *ngIf="forwardExist" class="darkerText" (click)="goToNextPage()">Επόμενο<ion-icon name="md-arrow-forward"></ion-icon></button>
-      </ion-col>
-    </ion-row>
-    <ion-item>
-      <img src="http://ca.cubecdn.net/20170620143621_wmid_134794.gif"  />
+    <ion-col col-7>
+    <b><p class="limitTwoLines">
+      {{first?.title | replacequotes}}
+    </p></b>
+    <p class="limitTwoLines">
+      {{first?.teaser | replacequotes}}
+    </p>
+    </ion-col>
+    <ion-item class="transparent">
+      <ion-icon name="md-calendar" color="darkGrey" item-start> {{main?.date}}</ion-icon>
+      <ion-icon name="md-clock" color="darkGrey" item-start> {{main?.time}}</ion-icon>
+      <ion-icon name="md-bookmark" color="darkGrey" item-end></ion-icon>
     </ion-item>
-  </ion-list>
+    </ion-row>
+  </ion-item>
+  <ion-item>
+    <img src="http://ca.cubecdn.net/20170717113856_wmid_135306.jpg"  />
+  </ion-item>
+  <ion-item text-wrap *ngFor="let item of rest" (click)="openArticle(item)">
+    <ion-row>
+      <ion-col col-5>
+        <img src="{{item?.image_url}}" />
+      </ion-col>
+    <ion-col col-7>
+    <b><p class="limitTwoLines">
+      {{item?.title | replacequotes}}
+    </p></b>
+    <p class="limitTwoLines">
+      {{item?.teaser | replacequotes}}
+    </p>
+    </ion-col>
+    <ion-item class="transparent">
+      <ion-icon name="md-calendar" color="darkGrey" item-start> {{item?.date}}</ion-icon>
+      <ion-icon name="md-clock" color="darkGrey" item-start> {{item?.time}}</ion-icon>
+      <ion-icon name="md-bookmark" color="darkGrey" item-end></ion-icon>
+    </ion-item>
+    </ion-row>
+  </ion-item>
+  <ion-row>
+    <ion-col col-5>
+      <button ion-button icon-left clear *ngIf="backExist" class="darkerText" (click)="goToBackPage()"><ion-icon name="md-arrow-back"></ion-icon>Προηγούμενο</button>
+    </ion-col>
+    <ion-col col-2></ion-col>
+    <ion-col col-5>
+      <button ion-button icon-right clear *ngIf="forwardExist" class="darkerText" (click)="goToNextPage()">Επόμενο<ion-icon name="md-arrow-forward"></ion-icon></button>
+    </ion-col>
+  </ion-row>
+  <ion-item>
+    <img src="http://ca.cubecdn.net/20170620143621_wmid_134794.gif"  />
+  </ion-item>
+</ion-list>
 </ion-content>
